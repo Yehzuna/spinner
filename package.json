@@ -1,0 +1,10 @@
+{
+  "name": "spinner",
+  "description": "A spinner sample with duration",
+  "version": "1.0.0",
+  "repository": "https://github.com/Yehzuna/spinner",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-compass": "^1.1.1"
+  }
+}

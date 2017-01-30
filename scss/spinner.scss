@@ -1,0 +1,49 @@
+$dimensions: 80px;
+$duration: 6s;
+
+.spinner {
+    width: $dimensions;
+    height: $dimensions;
+    position: absolute;
+    clip: rect(0px, $dimensions, $dimensions, $dimensions/2);
+    animation: close-wrapper 0.01s linear $duration/2 1 forwards;
+    .circle {
+        width: 60px;
+        height: 60px;
+        border: 10px solid #fff;
+        border-radius: 50px;
+        position: absolute;
+        clip: rect(0px, $dimensions/2, $dimensions, 0px);
+        box-sizing: content-box;
+    }
+
+    .circle-right {
+        animation: right-spin $duration/2 linear 0s 1 forwards;
+    }
+
+    .circle-left {
+        animation: left-spin $duration linear 0s 1 forwards;
+    }
+}
+
+@keyframes right-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+@keyframes left-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes close-wrapper {
+    to {
+        clip: rect(auto, auto, auto, auto);
+    }
+}

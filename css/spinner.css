@@ -1,0 +1,48 @@
+/* line 4, ../scss/spinner.scss */
+.spinner {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  clip: rect(0px, 80px, 80px, 40px);
+  animation: close-wrapper 0.01s linear 3s 1 forwards;
+}
+/* line 10, ../scss/spinner.scss */
+.spinner .circle {
+  width: 60px;
+  height: 60px;
+  border: 10px solid #fff;
+  border-radius: 50px;
+  position: absolute;
+  clip: rect(0px, 40px, 80px, 0px);
+  box-sizing: content-box;
+}
+/* line 20, ../scss/spinner.scss */
+.spinner .circle-right {
+  animation: right-spin 3s linear 0s 1 forwards;
+}
+/* line 24, ../scss/spinner.scss */
+.spinner .circle-left {
+  animation: left-spin 6s linear 0s 1 forwards;
+}
+
+@keyframes right-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@keyframes left-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes close-wrapper {
+  to {
+    clip: rect(auto, auto, auto, auto);
+  }
+}
