@@ -1,5 +1,7 @@
-$dimensions: 80px;
-$duration: 6s;
+$dimensions: 200px;
+$border: 20px;
+$duration: 10s;
+$color: #000;
 
 .spinner {
     width: $dimensions;
@@ -8,10 +10,10 @@ $duration: 6s;
     clip: rect(0px, $dimensions, $dimensions, $dimensions/2);
     animation: close-wrapper 0.01s linear $duration/2 1 forwards;
     .circle {
-        width: 60px;
-        height: 60px;
-        border: 10px solid #fff;
-        border-radius: 50px;
+        width: $dimensions - 20 - $border;
+        height: $dimensions - 20 - $border;
+        border: $border solid $color;
+        border-radius: $dimensions;
         position: absolute;
         clip: rect(0px, $dimensions/2, $dimensions, 0px);
         box-sizing: content-box;

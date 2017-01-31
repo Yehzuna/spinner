@@ -1,6 +1,6 @@
 {
   "name": "spinner",
-  "description": "A spinner sample with duration",
+  "description": "A customable spinner with duration",
   "version": "1.0.0",
   "repository": "https://github.com/Yehzuna/spinner",
   "devDependencies": {

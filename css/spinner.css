@@ -1,28 +1,28 @@
-/* line 4, ../scss/spinner.scss */
+/* line 6, ../scss/spinner.scss */
 .spinner {
-  width: 80px;
-  height: 80px;
+  width: 200px;
+  height: 200px;
   position: absolute;
-  clip: rect(0px, 80px, 80px, 40px);
-  animation: close-wrapper 0.01s linear 3s 1 forwards;
+  clip: rect(0px, 200px, 200px, 100px);
+  animation: close-wrapper 0.01s linear 5s 1 forwards;
 }
-/* line 10, ../scss/spinner.scss */
+/* line 12, ../scss/spinner.scss */
 .spinner .circle {
-  width: 60px;
-  height: 60px;
-  border: 10px solid #fff;
-  border-radius: 50px;
+  width: 160px;
+  height: 160px;
+  border: 20px solid #000;
+  border-radius: 200px;
   position: absolute;
-  clip: rect(0px, 40px, 80px, 0px);
+  clip: rect(0px, 100px, 200px, 0px);
   box-sizing: content-box;
 }
-/* line 20, ../scss/spinner.scss */
+/* line 22, ../scss/spinner.scss */
 .spinner .circle-right {
-  animation: right-spin 3s linear 0s 1 forwards;
+  animation: right-spin 5s linear 0s 1 forwards;
 }
-/* line 24, ../scss/spinner.scss */
+/* line 26, ../scss/spinner.scss */
 .spinner .circle-left {
-  animation: left-spin 6s linear 0s 1 forwards;
+  animation: left-spin 10s linear 0s 1 forwards;
 }
 
 @keyframes right-spin {
