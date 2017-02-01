@@ -46,3 +46,52 @@
     clip: rect(auto, auto, auto, auto);
   }
 }
+/* line 54, ../scss/spinner.scss */
+.move {
+  position: relative;
+  height: 140px;
+  width: 100px;
+  background: #ccc;
+  margin-top: 300px;
+}
+/* line 61, ../scss/spinner.scss */
+.move .up,
+.move .down {
+  position: absolute;
+  left: 50%;
+  border-radius: 100px;
+  background: #000;
+}
+/* line 68, ../scss/spinner.scss */
+.move .up {
+  top: 0;
+  height: 50px;
+  width: 50px;
+  margin-left: -25px;
+  transform-origin: 50% 100%;
+  animation: balance .8s ease-in-out infinite alternate;
+}
+/* line 78, ../scss/spinner.scss */
+.move .down {
+  bottom: 0;
+  height: 100px;
+  width: 80px;
+  margin-left: -40px;
+}
+
+@keyframes balance {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+@keyframes balance2 {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

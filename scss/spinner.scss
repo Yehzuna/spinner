@@ -49,3 +49,46 @@ $color: #000;
         clip: rect(auto, auto, auto, auto);
     }
 }
+
+
+.move {
+    position: relative;
+    height: 140px;
+    width: 100px;
+    background: #ccc;
+
+    margin-top: 300px;
+    .up,
+    .down {
+        position: absolute;
+        left: 50%;
+        border-radius: 100px;
+        background: #000;
+    }
+    .up {
+        top: 0;
+        height: 50px;
+        width: 50px;
+        margin-left: -25px;
+        transform-origin: 50% 100%;
+        //transform: rotate(45deg);
+        animation: balance .8s ease-in-out infinite alternate;
+    }
+
+    .down {
+        bottom: 0;
+        height: 100px;
+        width: 80px;
+        margin-left: -40px;
+    }
+}
+
+@keyframes balance {
+    0% { transform:  rotate(45deg); }
+    100% { transform:  rotate(-45deg);}
+}
+
+@keyframes balance2 {
+    0% { transform: translateY(10px); }
+    100% { transform: translateY(0); }
+}
